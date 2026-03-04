@@ -31,7 +31,7 @@ function App() {
   const [logoExpanded, setLogoExpanded] = useState(false)
   const [currentPage, setCurrentPage] = useState<'home' | 'design' | 'socialmedia' | 'webdev' | 'management' | 'influencer' | 'smallbusiness'>('home')
   const cursorRef = useRef<HTMLDivElement>(null)
-
+  const [selectedPlan, setSelectedPlan] = useState<number>(2); // 1=Lead,2=Business,3=Pro
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
@@ -112,7 +112,7 @@ function App() {
   //   <span className="material-symbols-outlined icon">{name}</span>
   // );
 
-  const [selectedPlan, setSelectedPlan] = useState<number>(2); // 1=Lead,2=Business,3=Pro
+ 
 
   const col = (i:number) => selectedPlan === i ? "col-active" : "";
   const planData = {

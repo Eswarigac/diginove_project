@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import '../styles/ServicePages.css'
+import Websitedesignpricedetails from './Websitedesignpricedetails'
+import Price from './Price'
+import ApplicationPrice from './Applicationprice'
+
+
+
 
 export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
     const [activeTab, setActiveTab] = useState<'overview' | 'website' | 'app' | 'process' | 'pricing'>('overview')
@@ -122,7 +128,9 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
             )}
 
             {activeTab === 'website' && (
+                
                 <section className="service-content">
+                    <Websitedesignpricedetails/>
                     <div className="content-container">
                         <h2>Website Design & Development</h2>
                         <p>We design and develop websites that function as primary business interfaces—not online brochures.</p>
@@ -177,11 +185,14 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                             <strong>Outcome:</strong> Websites that increase trust, improve conversion, and support long-term digital growth.
                         </div>
                     </div>
+                    
                 </section>
+                
             )}
 
             {activeTab === 'app' && (
                 <section className="service-content">
+                    <ApplicationPrice/>
                     <div className="content-container">
                         <h2>Application Design & Development</h2>
                         <p>We help organizations conceptualize and build applications that simplify processes, enhance customer experience, and enable scale.</p>
@@ -235,6 +246,7 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                             <strong>Outcome:</strong> Reliable, purpose-built applications that improve efficiency and customer experience.
                         </div>
                     </div>
+                    
                 </section>
             )}
 
@@ -284,8 +296,9 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                 </section>
             )}
 
-            {activeTab === 'pricing' && (
+            {activeTab === 'pricing' &&  (
                 <section className="service-content">
+                    <Price/>
                     <div className="content-container">
                         <h2>Website & Application Design and Development — Pricing</h2>
                         <div className="pricing-table-wrapper">
@@ -328,6 +341,7 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                             <button className="btn btn-primary btn-large">Discuss Your Project</button>
                         </div>
                     </div>
+                    
                 </section>
             )}
         </div>

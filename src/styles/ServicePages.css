@@ -99,9 +99,9 @@
 /* ============================= */
 
 .service-content {
-  padding: 80px 40px;
+  padding: 20px 40px;
   min-height: calc(100vh - 200px);
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .content-container {
@@ -798,7 +798,7 @@
   }
 
   .service-content {
-    padding: 50px 20px;
+    padding: 15px 20px;
   }
 
   .tab-container {

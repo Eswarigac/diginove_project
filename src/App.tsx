@@ -112,9 +112,9 @@ function App() {
   //   <span className="material-symbols-outlined icon">{name}</span>
   // );
 
- 
 
-  const col = (i:number) => selectedPlan === i ? "col-active" : "";
+
+  const col = (i: number) => selectedPlan === i ? "col-active" : "";
   const planData = {
     1: { name: "Lead Landing Plus", price: "₹4,999" },
     2: { name: "Business Website", price: "₹9,999" },
@@ -413,91 +413,91 @@ function App() {
       </section>
 
 
-      
+
 
       <section className="pricing" id='price'>
         <div className="pricing-container section-header">
-              {/* ===== TITLE ===== */}
-              <h2 className="pricing-title ">Simple, Transparent Pricing</h2>
-              <p>
-                Choose the plan that's right for your business.
-              </p>
-              {/* <h2 className="pricing-title">Detailed Feature Comparison</h2> */}
+          {/* ===== TITLE ===== */}
+          <h2 className="pricing-title ">Simple, Transparent Pricing</h2>
+          <p>
+            Choose the plan that's right for your business.
+          </p>
+          {/* <h2 className="pricing-title">Detailed Feature Comparison</h2> */}
 
-              {/* ===== TABLE ===== */}
-              <div className="table-wrapper">
-                <table className="feature-table">
-                  <thead>
-                    <tr>
-                      <th>Features</th>
-                      <th >Lead Landing Plus</th>
-                      <th >Business Website</th>
-                      <th >Pro Website + AI Agent</th>
-                    </tr>
-                  </thead>
+          {/* ===== TABLE ===== */}
+          <div className="table-wrapper">
+            <table className="feature-table">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th >Lead Landing Plus</th>
+                  <th >Business Website</th>
+                  <th >Pro Website + AI Agent</th>
+                </tr>
+              </thead>
 
-                  <tbody>
-                    <tr><td>Structure</td><td className={col(1)}>1-page Landing</td><td className={`bold ${col(2)}`}>Multi-page (up to 5)</td><td className={`bold ${col(3)}`}>Multi-page (up to 10)</td></tr>
-                    <tr><td>Lead form (Email)</td><td className={col(1)}><Icon name="check_circle"/></td><td className={col(2)}><Icon name="check_circle"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>WhatsApp & Call Buttons</td><td className={col(1)}><Icon name="check_circle"/></td><td className={col(2)}><Icon name="check_circle"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Google Maps Embed</td><td className={col(1)}><Icon name="check_circle"/></td><td className={col(2)}><Icon name="check_circle"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>SEO Optimization</td><td className={col(1)}>Basic (Title/Meta)</td><td className={col(2)}>Standard</td><td className={`bold ${col(3)}`}>Advanced</td></tr>
-                    <tr><td>Google Analytics</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}><Icon name="check_circle"/></td><td className={`bold ${col(3)}`}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Domain (1 Year)</td><td className={col(1)}><Icon name="cancel"/></td><td className={col(2)}><Icon name="check_circle"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Hosting + SSL</td><td className={col(1)}><Icon name="cancel"/></td><td className={col(2)}><Icon name="check_circle"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Blog Setup</td><td className={col(1)}><Icon name="cancel"/></td><td className={col(2)}>Add-on</td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Copywriting</td><td className={col(1)}><Icon name="cancel"/></td><td className={col(2)}>Add-on</td><td className={`bold ${col(3)}`}>Basic Included</td></tr>
-                    <tr><td>AI Agent</td><td className={col(1)}><Icon name="cancel"/></td><td className={col(2)}><Icon name="cancel"/></td><td className={col(3)}><Icon name="check_circle"/></td></tr>
-                    <tr><td>Revisions</td><td className={col(1)}>1</td><td className={`bold ${col(2)}`}>2</td><td className={`bold ${col(3)}`}>3</td></tr>
-                    <tr><td>Timeline</td><td className={col(1)}>24-48 hrs</td><td className={col(2)}>5-7 days</td><td className={col(3)}>2-4 weeks</td></tr>
+              <tbody>
+                <tr><td>Structure</td><td className={col(1)}>1-page Landing</td><td className={`bold ${col(2)}`}>Multi-page (up to 5)</td><td className={`bold ${col(3)}`}>Multi-page (up to 10)</td></tr>
+                <tr><td>Lead form (Email)</td><td className={col(1)}><Icon name="check_circle" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>WhatsApp & Call Buttons</td><td className={col(1)}><Icon name="check_circle" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>Google Maps Embed</td><td className={col(1)}><Icon name="check_circle" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>SEO Optimization</td><td className={col(1)}>Basic (Title/Meta)</td><td className={col(2)}>Standard</td><td className={`bold ${col(3)}`}>Advanced</td></tr>
+                <tr><td>Google Analytics</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={`bold ${col(3)}`}><Icon name="check_circle" /></td></tr>
+                <tr><td>Domain (1 Year)</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>Hosting + SSL</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}><Icon name="check_circle" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>Blog Setup</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}>Add-on</td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>Copywriting</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}>Add-on</td><td className={`bold ${col(3)}`}>Basic Included</td></tr>
+                <tr><td>AI Agent</td><td className={col(1)}><Icon name="cancel" /></td><td className={col(2)}><Icon name="cancel" /></td><td className={col(3)}><Icon name="check_circle" /></td></tr>
+                <tr><td>Revisions</td><td className={col(1)}>1</td><td className={`bold ${col(2)}`}>2</td><td className={`bold ${col(3)}`}>3</td></tr>
+                <tr><td>Timeline</td><td className={col(1)}>24-48 hrs</td><td className={col(2)}>5-7 days</td><td className={col(3)}>2-4 weeks</td></tr>
 
-                    {/* Bottom select cards inside table */}
-                    <tr className="select-row">
-                      <td>Choose the best plan for you:</td>
+                {/* Bottom select cards inside table */}
+                <tr className="select-row">
+                  <td>Choose the best plan for you:</td>
 
-                      <td><div
-                        onClick={()=>setSelectedPlan(1)}
-                        className={`mini-card ${selectedPlan===1?"active":""}`}>
-                        <p>Lead Landing Plus</p><h4>₹4,999</h4>
-                      </div></td>
+                  <td><div
+                    onClick={() => setSelectedPlan(1)}
+                    className={`mini-card ${selectedPlan === 1 ? "active" : ""}`}>
+                    <p>Lead Landing Plus</p><h4>₹4,999</h4>
+                  </div></td>
 
-                      <td>
-                        <div
-                          onClick={()=>setSelectedPlan(2)}
-                          className={`mini-card ${selectedPlan===2?"active":""}`}>
-                          {/* <Icon name="check_circle"/> */}
-                          <p>Business Website</p><h4>₹9,999</h4>
-                        </div>
-                      </td>
+                  <td>
+                    <div
+                      onClick={() => setSelectedPlan(2)}
+                      className={`mini-card ${selectedPlan === 2 ? "active" : ""}`}>
+                      {/* <Icon name="check_circle"/> */}
+                      <p>Business Website</p><h4>₹9,999</h4>
+                    </div>
+                  </td>
 
-                      <td>
-                        <div
-                          onClick={()=>setSelectedPlan(3)}
-                          className={`mini-card ${selectedPlan===3?"active":""}`}>
-                          <p>Pro + AI Agent</p><h4>₹49,999</h4>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colSpan={4}>
-                        <div className="wa-btn-wrap">
-                          <button className="wa-btn" onClick={sendWhatsApp}>
-                            Continue with {planData[selectedPlan as keyof typeof planData].name}
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                  <td>
+                    <div
+                      onClick={() => setSelectedPlan(3)}
+                      className={`mini-card ${selectedPlan === 3 ? "active" : ""}`}>
+                      <p>Pro + AI Agent</p><h4>₹49,999</h4>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan={4}>
+                    <div className="wa-btn-wrap">
+                      <button className="wa-btn" onClick={sendWhatsApp}>
+                        Continue with {planData[selectedPlan as keyof typeof planData].name}
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-              {/* ===== PLAN CARDS ===== */}
-              {/* <div className="plan-header">
+          {/* ===== PLAN CARDS ===== */}
+          {/* <div className="plan-header">
                 <h1>Choose Your Plan</h1>
                 <p>Choose the perfect plan for your business growth.</p>
               </div> */}
 
-              {/* <div className="cards">
+          {/* <div className="cards">
                 <div className="card">
                   <span className="tag">NEW</span>
                   <h3>Lead Landing Plus</h3>
@@ -520,8 +520,8 @@ function App() {
                 </div>
               </div> */}
 
-              {/* ===== CTA ===== */}
-              {/* <div className="cta mt-5">
+          {/* ===== CTA ===== */}
+          {/* <div className="cta mt-5">
                 <div>
                   <h2>Need a custom enterprise solution?</h2>
                   <p>We offer specialized development for large scale platforms.</p>
@@ -532,12 +532,12 @@ function App() {
       </section>
       <section className='section-cta'>
         <div className="cta mt-5">
-                <div>
-                  <h2>Need a custom enterprise solution?</h2>
-                  <p>We offer specialized development for large scale platforms.</p>
-                </div>
-                <button>Talk to an Expert</button>
-              </div>
+          <div>
+            <h2>Need a custom enterprise solution?</h2>
+            <p>We offer specialized development for large scale platforms.</p>
+          </div>
+          <button>Talk to an Expert</button>
+        </div>
 
       </section>
 

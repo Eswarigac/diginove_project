@@ -67,10 +67,8 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                     </button>
                     <button className={`tab-button ${activeTab === 'app' ? 'active' : ''}`} onClick={() => setActiveTab('app')}>
                         Application Design
-                    </button>
-                    <button className={`tab-button ${activeTab === 'process' ? 'active' : ''}`} onClick={() => setActiveTab('process')}>
-                        Process
-                    </button>
+                    </butto
+                
                     <button className={`tab-button ${activeTab === 'pricing' ? 'active' : ''}`} onClick={() => setActiveTab('pricing')}>
                         Pricing
                     </button>
@@ -247,52 +245,6 @@ export function WebsiteAppDevelopment({ onBack }: { onBack: () => void }) {
                         </div>
                     </div>
                     
-                </section>
-            )}
-
-            {activeTab === 'process' && (
-                <section className="service-content">
-                    <div className="content-container">
-                        <h2>How We Work</h2>
-                        <div className="process-steps">
-                            <div className="step">
-                                <div className="step-number">1</div>
-                                <h4>Diagnose</h4>
-                                <ul>
-                                    <li>Business objectives and constraints</li>
-                                    <li>User needs and operational context</li>
-                                    <li>Existing digital gaps</li>
-                                </ul>
-                            </div>
-                            <div className="step">
-                                <div className="step-number">2</div>
-                                <h4>Design</h4>
-                                <ul>
-                                    <li>Information architecture and user flows</li>
-                                    <li>UX/UI wireframes and prototypes</li>
-                                    <li>Technology and feature prioritization</li>
-                                </ul>
-                            </div>
-                            <div className="step">
-                                <div className="step-number">3</div>
-                                <h4>Build</h4>
-                                <ul>
-                                    <li>Website or app development</li>
-                                    <li>Design-system implementation</li>
-                                    <li>Content and feature integration</li>
-                                </ul>
-                            </div>
-                            <div className="step">
-                                <div className="step-number">4</div>
-                                <h4>Optimize</h4>
-                                <ul>
-                                    <li>Performance and usability reviews</li>
-                                    <li>Iterative improvements</li>
-                                    <li>Scalability planning</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </section>
             )}
 
